@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class DBconnection {
+	
 	/*
 	 * db연결객체 정의
 	 */
