@@ -6,7 +6,6 @@
 <title>Insert title here</title>
 <%@page import="kr.code.db.DBconnection" %>
 <%@page import="java.sql.Connection" %>
-
 <%@page import="java.sql.ResultSet" %>
 <%@page import="java.sql.PreparedStatement" %>
 </head>
@@ -21,7 +20,7 @@
 		ResultSet res=null;
 		
 		try{
-			conn=DBconnection.getConnection();
+			conn=DBconnection.getConnection();		//DB 연결
 		
 			StringBuilder sb=new StringBuilder();
 		
@@ -32,12 +31,12 @@
 			
 			pstmt=conn.prepareStatement(sb.toString());			//DB연결되어있는 객체가 가진 문서에 sql을 써서 변환하라
 			
-			//파라미터의 데이터타입은 매칭할 칼럼의 데이터타입과 동일하게
+			//파라미터의 데이터타입은 매칭할 칼럼의 데이터타입과 동일하게 준다
 			pstmt.setString(1,userId);		//첫번째 파라미터
 			pstmt.setString(2,userPw);		//두번째 파라미터
 			
-			//실행결과
-			res=pstmt.executeQuery();
+			
+			res=pstmt.executeQuery();		//실행결과를 받는다
 			String userName="";
 			
 			if(res!=null&&res.next()){
@@ -45,7 +44,7 @@
 				request.setAttribute("msg","로그인되었습니다");		//요청객체에 정보저장 map과같이 key,value쌍으로 저장
 				disp.forward(request,response);
 			}else{
-				//페이지를 단순히 이동시키는 기능, 데이터보존은 x()
+				//페이지를 단순히 이동시키는 기능, 데이터보존은 x(보존하는 방법이 있긴하지만...잘 안 쓴다.)
 				response.sendRedirect("login.jsp");
 			}
 			
