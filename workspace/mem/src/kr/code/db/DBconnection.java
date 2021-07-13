@@ -39,7 +39,7 @@ public class DBconnection {
 		String passwd="0516";
 		
 		
-		conn=DriverManager.getConnection(url,id,passwd);
+		conn=DriverManager.getConnection(url,id,passwd);	//DB 연결
 		if(conn!=null) {
 			System.out.println("db연결됨");
 		}else {
