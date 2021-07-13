@@ -6,7 +6,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
+<%	//getParameter 의 key는 앞 페이지의 input 의 name 값이다.
 	String userId=request.getParameter("userId");
 	String passwd=request.getParameter("userPw");
 
