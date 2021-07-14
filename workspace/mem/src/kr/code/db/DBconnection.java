@@ -31,9 +31,10 @@ public class DBconnection {
 		//db접속로직구현
 		
 		//db연결 
-		Class.forName("org.mariadb.jdbc.Driver");
+		Class.forName("org.mariadb.jdbc.Driver");		//Class.forName("com.mysql.jdbc.Driver");
 		//db접속경로지정 jdbc:mariadb:// + ip주소:port/스키마?옵션1&옵션2&......;
 		String url="jdbc:mariadb://localhost:13306/jsp?useUnicode=true"+"&characterEncoding=UTF-8";
+		//String url="jdbc:mysql://localhost:3306/jsp?useUnicode=true"+"&characterEncoding=UTF-8";
 		
 		String id="root";
 		String passwd="0516";
