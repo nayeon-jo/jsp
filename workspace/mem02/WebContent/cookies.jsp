@@ -20,7 +20,7 @@
 	//쿠키의 value는 무조건 String
 	Cookie cookie2=new Cookie("userAge","30");
 	cookie1.setComment("사용자이름");
-	cookie1.setMaxAge(60*60*24);
+	cookie1.setMaxAge(60*60*24);		//하루 
 	
 	response.addCookie(cookie1);
 	response.addCookie(cookie2);
