@@ -13,6 +13,10 @@ import org.apache.commons.dbcp2.PoolingDriver;
 import org.apache.commons.pool2.impl.GenericObjectPool;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
+/*서블릿 기반 웹 개발할 때 DBCP는 이 코드 응용하면됨!*/
+
+
+
 //name은 서블릿 이름, asyncSupported 비동기 처리, loadOnStartup 프로그램 실행시 자동실행여부(0만 아니면 됨), urlPatterns는 dbcp접근주소
 @WebServlet(name="dbcpinit", asyncSupported=true, loadOnStartup=1, urlPatterns= {"/dbinit"})
 
