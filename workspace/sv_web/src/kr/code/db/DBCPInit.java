@@ -13,8 +13,8 @@ import org.apache.commons.dbcp2.PoolingDriver;
 import org.apache.commons.pool2.impl.GenericObjectPool;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
+//name은 서블릿 이름, asyncSupported 비동기 처리, loadOnStartup 프로그램 실행시 자동실행여부(0만 아니면 됨), urlPatterns는 dbcp접근주소
 @WebServlet(name="dbcpinit", asyncSupported=true, loadOnStartup=1, urlPatterns= {"/dbinit"})
-//name=서블릿 이름, asyncSupported 비동기 처리, loadOnStartup 프로그램 실행시 자동실행여부(0만 아니면 됨), urlPatterns=dbcp접근주소
 
 public class DBCPInit extends HttpServlet{
 	private static final long serialVersionUID=1L;	//데이터 직렬화 시 같은 데이터를 검증하기위한 ID값(나중에 내부에서 재생되기때문에 default값만 주면됨)
@@ -43,7 +43,7 @@ public class DBCPInit extends HttpServlet{
 			//커넥션을 보관할 pool을 만들 공장, 커넥션을 관리하게됨, pool에서 커넥션을 생성하기때문에 커넥션 만들 공장을 넣어줌
 			PoolableConnectionFactory poolFactory=new PoolableConnectionFactory(connFactory,null);
 			
-			poolFactory.setValidationQuery("select 1");		//커넥션이 살아있는지 테스트로 날려볼 sql 지정
+			poolFactory.setValidationQuery("select 1");		//커넥션이 살아있는지 테스트로 날려볼 sql 지정 (sql 구문은 DB마다 조금씩 다르다.)
 			
 			GenericObjectPoolConfig poolConfig=new GenericObjectPoolConfig();	//풀의 설정을 제어
 			
@@ -57,9 +57,9 @@ public class DBCPInit extends HttpServlet{
 			
 			Class.forName("org.apache.commons.dbcp2.PoolingDriver");	//2차로 커넥션풀을 위한 드라이버를 설정
 			
-			PoolingDriver driver=(PoolingDriver)DriverManager.getDriver("jdbc:apache:commons:dbcp:");
+			PoolingDriver driver=(PoolingDriver)DriverManager.getDriver("jdbc:apache:commons:dbcp:");		//커넥션풀 등록
 			
-			driver.registerPool("dbpool", connectionPool);
+			driver.registerPool("dbpool", connectionPool);		//풀 드라이버에 커넥션 등록 
 			
 			System.out.println("---------------------------");	
 			System.out.println("dbcp Connection Pool이 상주되었습니다");	
