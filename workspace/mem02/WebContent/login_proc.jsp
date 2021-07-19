@@ -27,8 +27,12 @@
 		1. import를 통해 선언하여 쓰기
 		2. javaBean 기능을 이용하기
 			ㅡjsp태그 중 하나, 객체를 불러옴과 동시에 생성(Class a=new Class()와 같다)*/
+			
 		System.out.println(userInfo);
-		Connection conn=null;	PreparedStatement pstmt=null;	ResultSet res=null;
+		Connection conn=null;	
+		PreparedStatement pstmt=null;	
+		ResultSet res=null;
+		
 		try{
 			conn=DBconnection.getConnection();		//DB 연결
 			StringBuilder sb=new StringBuilder();
@@ -40,7 +44,8 @@
 			pstmt=conn.prepareStatement(sb.toString());		//DB연결되어있는 객체가 가진 문서에 sql을 써서 반환하라
 			
 			//파라미터의 데이터타입은 매칭할 칼럼의 데이터타입과 동일하게 준다
-			pstmt.setString(1,loginInfo.getUserId());	pstmt.setString(2,loginInfo.getUserPw());
+			pstmt.setString(1,loginInfo.getUserId());	
+			pstmt.setString(2,loginInfo.getUserPw());
 			
 			res=pstmt.executeQuery();		//실행결과를 받는다
 			String userName="";
