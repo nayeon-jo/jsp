@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*테이블의 전체 라인 색깔*/
+table.b_table{
+	border-color: #cab77d;
+}
+
+.container{
+	width:700px;
+	height:350px;
+	overflow: auto;		/*범위를 넘어가면 스크롤 생성*/
+}
+
+tr.b_tr{
+	font-size:12px;
+	color:#737373;
+	padding: 5px 5px 5px 5px;
+}
+
+th.b_th{
+	padding: 5px 5px 5px 5px;
+	background-color:#edd9b4;
+	position: sticky;
+	top: 0;
+}
+
+td.b_td{
+	border-right:0;
+	border-left:0;
+	font-family: sans-serif, 도움;
+	font-size: 14px;
+	color:#737373;
+	text-align:left;
+	padding: 5px 5px 5px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
