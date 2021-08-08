@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<input type='text' id="num" name="num">&nbsp;&nbsp;
+	<button type="button" id="confirmBtn">확인</button>
+</body>
+
+ <script>
+	
+	//제이쿼리로 쓰는 자동실행함수
+	//ready(callback)-자바스크립트는 함수도 파라미터로 넘길 수 있음
+	$(document).ready(function(){
+		$('#confirmBtn').on('click',function(){
+			//JQUERY를 이용하여 input값을 가져오기
+			var value=$('#num').val();
+			
+			//제이쿼리 함수 사용하기
+			//$.함수명
+			//$.trim(대상)-대상의 공백을 제거
+			if($.trim(value).length==0){
+				alert('값을 입력하세요')
+			}else{
+				alert(value);
+			}
+		})
+	});
+ </script>
+</html>

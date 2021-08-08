@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<input type='text' id="num" name="num">&nbsp;&nbsp;
+	<button type="button" id="confirmBtn">확인</button>
+</body>
+
+ <script>
+	//자바스크립트로 자동실행함수
+	/* (function(){
+		var btn=document.querySelector('#confirmBtn');
+		btn.addEventListener('click',function(e){
+			alert('자바스크립트 누름');
+		})
+	})(); */
+	
+	//제이쿼리로 쓰는 자동실행함수
+	//ready(callback)-자바스크립트는 함수도 파라미터로 넘길 수 있음
+	$(document).ready(function(){
+		$('#confirmBtn').on('click',function(){
+			alert('제이쿼리 누름');
+		})
+	});
+ </script>
+</html>
