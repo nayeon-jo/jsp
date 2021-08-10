@@ -93,14 +93,5 @@ public class DBconnection {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 }
