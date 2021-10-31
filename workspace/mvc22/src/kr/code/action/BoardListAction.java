@@ -26,7 +26,7 @@ public class BoardListAction implements CommonAction{
 		
 		}catch (Exception e) {
 			
-			e.printStackTrace();;
+			e.printStackTrace();
 		}
 		
 		
