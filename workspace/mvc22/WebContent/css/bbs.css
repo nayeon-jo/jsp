@@ -1,0 +1,76 @@
+
+TABLE.b_table{ 
+	  border-color:#cba77d;           
+}
+TR.b_tr{ 
+            sans-serif, 돋움; font-size:12px; color:#737373; padding:5px 5px 5px 5px;
+}
+TD.b_td{ border-right:0;
+		     border-left:0;
+		    font-family:sans-serif, 돋움; 
+		    font-size:14px; color:#737373;
+		    text-align: left;
+		     padding:5px 5px 5px 5px;
+}
+		  
+TD.b_num{   border-right:0;
+		    border-left:0;
+		    font-family:sans-serif, 돋움; 
+		    font-size:12px; color:#737373;
+		    text-align: center;
+		     padding:5px 5px 5px 5px;
+ }
+		  
+TD.b_day{    border-right:0;
+		    border-left:0;
+		    font-family:sans-serif, 돋움; 
+		    font-size:12px; color:#737373;
+		    text-align: center;
+		     padding:5px 5px 5px 5px;
+		  }
+		  
+TD.b_count{  
+		    border-left:0;
+		    font-family:sans-serif, 돋움; 
+		    font-size:12px; color:#737373;
+		    text-align: center;
+		     padding:5px 5px 5px 5px;
+}		  
+		  		  
+		  
+		  
+		  
+		    
+INPUT.b_input{ font-family:sans-serif, 돋움; font-size:12px; color:#737373;}
+TH.b_th{padding:5px 5px 5px 5px; background-color:#edd9b4;}
+TEXTAREA.b_text{ font-family:sans-serif, 돋움; font-size:12px; color:#737373; }
+
+
+
+TEXTAREA.b_text{
+    font-family:sans-serif, 돋움; font-size:12px; color:rgb(118,17,17); 
+    letter-spacing:120%; line-height:150%; background-color:rgb(243,243,243); 
+    padding:5px; border-width:1; border-color:rgb(250,196,196); border-style:solid;
+    overflow-x:hidden;
+	scrollbar-face-color: #EFEFEF;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-3dlight-color: #DFDFDF;
+	scrollbar-darkshadow-color: #DFDFDF;
+	scrollbar-track-color: #ffffff; scrollbar-arrow-color: #000000;
+}
+INPUT.b_input{
+    BORDER-RIGHT: #f51111 1px dashed; BORDER-TOP: #f51111 1px dashed;
+    BORDER-LEFT: #f51111 1px dashed; BORDER-BOTTOM: #f51111 1px dashed;
+    HEIGHT:20px;
+    color:rgb(118,17,17); 
+    background-color:rgb(243,243,243); 
+    border-width:1; border-color:rgb(250,196,196); border-style:solid;
+    
+}
+
+
+TD.bDot{ border-bottom-style:dotted; border-bottom-width:1px; border-bottom-color:#999999; }
+TD.tName{background-color:#DCDCDC; text-align:center; font-weight:bold; color:#333333; }
+
+INPUT.cButton{ width:70px; }

@@ -1,0 +1,67 @@
+BODY.b_body {
+	FONT-SIZE: 9pt;
+	COLOR: black;
+	TABLE-LAYOUT: fixed;
+	FONT-FAMILY: ±¼¸², verdana, tahoma;
+	BACKGROUND-COLOR: #FFFFFF
+}
+
+TD.b_td {
+	FONT-SIZE: 9pt;
+	COLOR: black;
+	LINE-HEIGHT: 160%;
+	WORD-BREAK: break-all;
+	FONT-FAMILY: ±¼¸², verdana, tahoma
+}
+
+SELECT.b_select {
+	FONT-SIZE: 9pt;
+	COLOR: black;
+	LINE-HEIGHT: 160%;
+	FONT-FAMILY: ±¼¸², verdana, tahoma
+}
+
+DIV.b_div {
+	FONT-SIZE: 9pt;
+	COLOR: black;
+	LINE-HEIGHT: 160%;
+	FONT-FAMILY: ±¼¸², verdana, tahoma
+}
+
+FORM.b_form {
+	FONT-SIZE: 9pt;
+	COLOR: black;
+	LINE-HEIGHT: 160%;
+	FONT-FAMILY: ±¼¸², verdana, tahoma
+}
+
+TEXTAREA.b_text {
+	BORDER-RIGHT: 1px solid #999999;
+	BORDER-TOP: 1px solid #999999;
+	FONT-SIZE: 9pt;
+	BORDER-LEFT: 1px solid #999999;
+	COLOR: BLACK;
+	BORDER-BOTTOM: 1px solid #999999;
+	FONT-FAMILY: ±¼¸², verdana;
+	BACKGROUND-COLOR: white
+}
+
+INPUT.b_in {
+	BORDER-RIGHT: 1px solid #999999;
+	BORDER-TOP: 1px solid #999999;
+	FONT-SIZE: 9pt;
+	BORDER-LEFT: 1px solid #999999;
+	COLOR: BLACK;
+	BORDER-BOTTOM: 1px solid #999999;
+	FONT-FAMILY: ±¼¸², verdana;
+	HEIGHT: 19px;
+	BACKGROUND-COLOR: white
+}
+
+tbody.b_b td a:link {color: #903;}
+tbody.b_b td a:visited {color:#633;}
+tbody.b_b td a:hover {color:#000; text-decoration: none;
+
+.bold {
+	font-weight:bold;
+}
