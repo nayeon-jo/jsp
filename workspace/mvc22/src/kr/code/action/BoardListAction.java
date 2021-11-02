@@ -19,16 +19,13 @@ public class BoardListAction implements CommonAction{
 		try {
 			//게시판 리스트 가져오기
 			List<BoardVO> list = service.getBoardList();
-			//경과를 리퀘스으테 담기
-		
+			
+			//경과를 리퀘스트에 담기
 			request.setAttribute("totalCount", list.size());
 			request.setAttribute("boardList",list);
-		
 		}catch (Exception e) {
-			
 			e.printStackTrace();
 		}
-		
 		
 		return CommonAction.root +"/jsp/board/board_list.jsp";
 	}
